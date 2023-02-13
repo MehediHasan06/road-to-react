@@ -13,8 +13,8 @@ for (let i = lastIndex; i >= 0; i--) {
 <!-- while loop -->
 let count = prompt('Enter a positive number: ')
 while (count > 0) {
-  console.log(count)
-  count--
+  console.log(count);
+  count--;
 }
 
 
@@ -46,6 +46,46 @@ countries.forEach((country, i, arr) => {
   console.log(i, country.toUpperCase());
 });
 
+
+
+<!-- for in loop -->
+<!-- The for in loop can be used with object literals to get the keys of the object. -->
+
+const user = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  skills: ['HTML', 'CSS', 'JS', 'React', 'Node', 'Python', 'D3.js'],
+}
+for (const key in user) {
+  console.log(key, user[key]);
+};
+
+
+
+<!-- break -->
+<!-- Break is used to interrupt a loop. -->
+
+for (let i = 0; i <= 5; i++) {
+  if (i == 3) {
+    break
+  }
+  console.log(i);
+};
+// 0 1 2
+
+
+<!-- continue -->
+<!-- We use the keyword continue to skip a certain iterations. -->
+
+for (let i = 0; i <= 5; i++) {
+  if (i == 3) {
+    continue
+  }
+  console.log(i)
+}
+// 0 1 2 4 5
 
 
 
