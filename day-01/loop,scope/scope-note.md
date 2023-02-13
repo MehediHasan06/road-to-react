@@ -60,5 +60,5 @@ for (let i = 0; i < 3; i++) {
 // console.log(i), Uncaught ReferenceError: gravity is not defined
 
 
-
+<!-- The scope let and const is the same. The difference is only reassigning. We can not change or reassign the value of const variable. I would strongly suggest you to use let and const, by using let and const you will writ clean code and avoid hard to debug mistakes. As a rule of thumb, you can use let for any value which change, const for any constant value, and for array, object, arrow function and function expression. -->
 
